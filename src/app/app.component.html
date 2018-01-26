@@ -1,0 +1,8 @@
+<input type="number" [(ngModel)]="value" />
+ <button (click)="printSpiral(value)">Click</button>
+ <div *ngIf="mydata.length>0">
+     <div  *ngFor="let data of mydata;let i=index">
+        {{data}}
+     </div>
+ </div>
+ 
